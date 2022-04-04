@@ -1,8 +1,7 @@
 ---------------------------------------------------------------------------
--- Practical SQL: A Beginner's Guide to Storytelling with Data, 2nd Edition
--- by Anthony DeBarros
+-- SQL with Data Storytelling
 
--- Chapter 16 Code Examples
+-- Week 16 Code Examples
 ----------------------------------------------------------------------------
 
 -- Listing 16-1: JSON with information about two films

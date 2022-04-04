@@ -1,8 +1,7 @@
 ---------------------------------------------------------------------------
--- Practical SQL: A Beginner's Guide to Storytelling with Data, 2nd Edition
--- by Anthony DeBarros
+-- SQL with Data Storytelling
 
--- Chapter 10 Code Examples
+-- Week 10 Code Examples
 ----------------------------------------------------------------------------
 
 -- Listing 10-1: Importing the FSIS Meat, Poultry, and Egg Inspection Directory

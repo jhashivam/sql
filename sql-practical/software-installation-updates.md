@@ -1,5 +1,5 @@
-# Practical SQL, 2nd Edition
-### A Beginner's Guide to Storytelling with Data
+# SQL with Data Storytelling
+### Learn SQL with Data Storytelling
 
 ### Software Installation Updates
 

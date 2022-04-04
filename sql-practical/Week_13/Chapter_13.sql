@@ -1,8 +1,7 @@
 ---------------------------------------------------------------------------
--- Practical SQL: A Beginner's Guide to Storytelling with Data, 2nd Edition
--- by Anthony DeBarros
+-- SQL with Data Storytelling
 
--- Chapter 13 Code Examples
+-- Week 13 Code Examples
 ----------------------------------------------------------------------------
 
 -- Listing 13-1: Using a subquery in a WHERE clause

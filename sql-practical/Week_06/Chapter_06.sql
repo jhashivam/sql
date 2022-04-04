@@ -1,8 +1,7 @@
 ---------------------------------------------------------------------------
--- Practical SQL: A Beginner's Guide to Storytelling with Data, 2nd Edition
--- by Anthony DeBarros
+-- SQL with Data Storytelling
 
--- Chapter 6 Code Examples
+-- Week 6 Code Examples
 ----------------------------------------------------------------------------
 
 -- Listing 6-1: Basic addition, subtraction and multiplication with SQL

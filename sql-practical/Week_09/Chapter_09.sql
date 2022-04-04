@@ -1,8 +1,7 @@
 ---------------------------------------------------------------------------
--- Practical SQL: A Beginner's Guide to Storytelling with Data, 2nd Edition
--- by Anthony DeBarros
+-- SQL with Data Storytelling
 
--- Chapter 9 Code Examples
+-- Week 9 Code Examples
 ----------------------------------------------------------------------------
 
 -- Listing 9-1: Creating and filling the 2018 Public Libraries Survey table

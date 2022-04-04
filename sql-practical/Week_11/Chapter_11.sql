@@ -1,8 +1,7 @@
 ---------------------------------------------------------------------------
--- Practical SQL: A Beginner's Guide to Storytelling with Data, 2nd Edition
--- by Anthony DeBarros
+-- SQL with Data Storytelling
 
--- Chapter 11 Code Examples
+-- Week 11 Code Examples
 ----------------------------------------------------------------------------
 
 -- Listing 11-1: Creating a 2014-2018 ACS 5-Year Estimates table and importing data
