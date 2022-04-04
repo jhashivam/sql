@@ -28,12 +28,12 @@ This table shows that two students have signed up for COMPSCI101, and three have
 
 The first several rows of the students table include the following:
 
-student_id    first_name    last_name    dob
-----------    ----------    ---------    ----------
-ABRILDA002    Abril         Davis        2005-01-10
-CHRISPA004    Chris         Park         1999-04-10
-DAVISHE010    Davis         Hernandez    2006-09-14
-RILEYPH002    Riley         Phelps       2005-06-15
+|student_id  |  first_name   | last_name |   dob       |
+|----------   | ----------  |  ---------  |  ---------- |
+|ABRILDA002   | Abril       |  Davis       | 2005-01-10 |
+|CHRISPA004   | Chris       |  Park         | 1999-04-10 |
+|DAVISHE010   | Davis       |  Hernandez   | 2006-09-14 |
+|RILEYPH002   | Riley       |  Phelps      | 2005-06-15 |
 The students table contains details on each student, using the value in the student_id column to identify each one. That value acts as a unique key that connects both tables, giving you the ability to create rows such as the following with the class_id column from student_enrollment and the first_name and last_name columns from students:
 
 class_id      first_name    last_name
