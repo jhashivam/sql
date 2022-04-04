@@ -1,7 +1,7 @@
 # SQL with Data Storytelling
 ### Learn SQL with Data Storytelling
 
-## Which Database Does The Book Use?
+## Which Database does we used?
 
 We use [PostgreSQL](https://www.postgresql.org), which is free and open source. PostgreSQL is used by some of the world's largest companies. Its SQL syntax adheres closely to the ANSI SQL standard, and the concepts you learn will apply to most database management systems, including MySQL, Oracle, SQLite, and others. Note that Microsoft SQL Server employs a variant of SQL called T-SQL, which is not covered by Practical SQL.
 
