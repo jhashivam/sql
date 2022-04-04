@@ -2,19 +2,14 @@
 
 ***SQL is more than just a means for extracting knowledge from data. It’s also a language for defining the structures that hold data so we can organize relationships in the data***
 
+CREATE DATABASE AND TABLE
+
 > A table is a grid of rows and columns that store data. Each row holds a collection of columns, and each column contains data of a specified type: most commonly, numbers, characters, and dates. We use SQL to define the structure of a table and how each table might relate to other tables in the database. We also use SQL to extract, or query, data from tables.
 
-Introduces PostgreSQL, the pgAdmin user interface, and the code for loading a simple data set about teachers into a new database.
+We will create our first database, add a table, and then insert several rows of data into the table using SQL in the pgAdmin interface. Then, you’ll use pgAdmin to view the results. Let’s start with a look at tables.
 
-`CREATE DATABASE AND TABLE`
+##Understanding Tables##
 
-SQL is more than just a means for extracting knowledge from data. It’s also a language for defining the structures that hold data so we can organize relationships in the data. Chief among those structures is the table.
-
-A table is a grid of rows and columns that store data. Each row holds a collection of columns, and each column contains data of a specified type: most commonly, numbers, characters, and dates. We use SQL to define the structure of a table and how each table might relate to other tables in the database. We also use SQL to extract, or query, data from tables.
-
-In this chapter, you’ll create your first database, add a table, and then insert several rows of data into the table using SQL in the pgAdmin interface. Then, you’ll use pgAdmin to view the results. Let’s start with a look at tables.
-
-Understanding Tables
 Knowing your tables is fundamental to understanding the data in your database. Whenever I start working with a fresh database, the first thing I do is look at the tables within. I look for clues in the table names and their column structure. Do the tables contain text, numbers, or both? How many rows are in each table?
 
 Next, I look at how many tables are in the database. The simplest database might have a single table. A full-bore application that handles customer data or tracks air travel might have dozens or hundreds. The number of tables tells me not only how much data I’ll need to analyze, but also hints that I should explore relationships among the data in each table.
