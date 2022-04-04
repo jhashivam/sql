@@ -16,13 +16,13 @@ Next, I look at how many tables are in the database. The simplest database might
 
 > let’s look at an example of what the contents of tables might look like. We will use a hypothetical database for managing a school’s class enrollment; within that database are several tables that track students and their classes. The first table, called `student_enrollment`, shows the students that are signed up for each class section:
 
-| student_id |   | class_id   |    | class_section |   | semester |
-| ---------- |   | ---------- |    | ------------- |   | ---------|
-| CHRISPA004 |   | COMPSCI101 |    | 3             |   | Fall 2023 |
-| DAVISHE010 |   | COMPSCI101 |    | 3             |   | Fall 2023 |
-| ABRILDA002 |   | ENG101     |    | 40            |   | Fall 2023 |
-| DAVISHE010 |   | ENG101     |    | 40            |   | Fall 2023 |
-| RILEYPH002 |   | ENG101     |    | 40            |   | Fall 2023 |
+| student_id | class_id   | class_section | semester |
+| ---------- | ---------- | ------------- | ---------|
+| CHRISPA004 | COMPSCI101 |  3            | Fall 2023 |
+| DAVISHE010 | COMPSCI101 |  3            | Fall 2023 |
+| ABRILDA002 | ENG101     |  40           | Fall 2023 |
+| DAVISHE010 | ENG101     |  40           | Fall 2023 |
+| RILEYPH002 | ENG101     |  40           | Fall 2023 |
 
 This table shows that two students have signed up for COMPSCI101, and three have signed up for ENG101. But where are the details about each student and class? In this example, these details are stored in separate tables called students and classes, and those tables relate to this one. This is where the power of a relational database begins to show itself.
 
