@@ -54,6 +54,7 @@
     - On macOS, when you launch pgAdmin the first time, a dialog might appear that displays “pgAdmin4.app can’t be opened because it is from an      unidentified developer.” Right-click the icon and click Open. The next dialog should give you the option to open the app; going forward, your Mac will remember you’ve granted this permission.
 
     ![This is an image](https://github.com/shivamjhads/sql/blob/main/sql-practical/Week-01/01.png)
+    ![This is an image](https://github.com/shivamjhads/sql/blob/main/sql-practical/Week-01/03.png)
 
 - **Connecting to the Default postgres Database**:
 
@@ -74,10 +75,9 @@
 **Test the Installation**:
     
     The pgAdmin app includes a Query Tool, which is where you write and execute code. To open the Query Tool, in pgAdmin’s object browser, first click once on any database to highlight it. For example, click the postgres database and then select Tools▶Query Tool. You’ll see three panes: a Query Editor, a Scratch Pad for holding code snippets while you work, and a Data Output pane that displays query results. You can open multiple tabs to connect to and write queries for different databases or just to organize your code the way you would like. To open another tab, click a database in the object browser and open the Query Tool again via the menu.
-
+    
     Let’s run a simple query and see its output, using the statement that returns the version of PostgreSQL we have installed.
-
-    ```
+```
     SELECT version();
-    ```
-    ![Result](https://github.com/shivamjhads/sql/blob/main/sql-practical/Week-01/03.png)
+```
+![Output](https://github.com/shivamjhads/sql/blob/main/sql-practical/Week-01/03.png)
