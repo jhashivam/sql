@@ -1,4 +1,4 @@
-### Week 2: Create My First Database and Table
+## Week 2: Create My First Database and Table
 
 ***SQL is more than just a means for extracting knowledge from data. It’s also a language for defining the structures that hold data so we can organize relationships in the data***
 
@@ -10,11 +10,11 @@ We will create our first database, add a table, and then insert several rows of 
 
 ### Understanding Tables
 
-Knowing your tables is fundamental to understanding the data in your database. Whenever I start working with a fresh database, the first thing I do is look at the tables within. I look for clues in the table names and their column structure. Do the tables contain text, numbers, or both? How many rows are in each table?
+Knowing tables is fundamental to understanding the data in your database. Whenever we start working with a fresh database, the first thing I do is look at the tables within. I look for clues in the table names and their column structure. Do the tables contain text, numbers, or both? How many rows are in each table?
 
-Next, I look at how many tables are in the database. The simplest database might have a single table. A full-bore application that handles customer data or tracks air travel might have dozens or hundreds. The number of tables tells me not only how much data I’ll need to analyze, but also hints that I should explore relationships among the data in each table.
+Next, I look at how many tables are in the database. The simplest database might have a single table. A full-bore application that handles customer data or tracks air travel might have dozens or hundreds. The number of tables tells me not only how much data I will need to analyze, but also hints that I should explore relationships among the data in each table.
 
-Before you dig into SQL, let’s look at an example of what the contents of tables might look like. We’ll use a hypothetical database for managing a school’s class enrollment; within that database are several tables that track students and their classes. The first table, called student_enrollment, shows the students that are signed up for each class section:
+> let’s look at an example of what the contents of tables might look like. We will use a hypothetical database for managing a school’s class enrollment; within that database are several tables that track students and their classes. The first table, called student_enrollment, shows the students that are signed up for each class section:
 
 student_id    class_id      class_section    semester
 ----------    ----------    -------------    ---------
