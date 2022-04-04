@@ -26,7 +26,10 @@
      
      A small elephant icon will appear in your menu bar to indicate that you now have a database running. To set up the included PostgreSQL command line tools so you’re able to use them in future, open your Terminal application and run the following single line of code at the prompt (you can copy the code as a single line from the Postgres.app site at https://postgresapp.com/documentation/install.html):
 
-     <sudo mkdir -p /etc/paths.d && echo /Applications/Postgres.app/Contents/Versions/latest/bin | sudo tee /etc/paths.d/postgresapp>
+     ```
+     sudo mkdir -p /etc/paths.d && 
+     echo /Applications/Postgres.app/Contents/Versions/latest/bin | sudo tee /etc/paths.d/postgresapp
+     ```
 
      You may be prompted for the password you use to log in to your Mac. Enter that. The commands should execute without providing any output.
 
@@ -50,6 +53,8 @@
     - macOS: Click the pgAdmin icon in your Applications folder, making sure you’ve also launched Postgres.app.
     - On macOS, when you launch pgAdmin the first time, a dialog might appear that displays “pgAdmin4.app can’t be opened because it is from an      unidentified developer.” Right-click the icon and click Open. The next dialog should give you the option to open the app; going forward, your Mac will remember you’ve granted this permission.
 
+    !(https://github.com/shivamjhads/sql/blob/main/sql-practical/Week-01/01.png)
+
 - **Connecting to the Default postgres Database**:
 
     PostgreSQL is a database management system, which means it’s software that allows you to define, manage, and query databases. When you installed PostgreSQL, it created a database server—an instance of the application running on your computer—that includes a default database called postgres. A database is a collection of objects that includes tables, functions, and much more, and this is where your actual data will lie. We use the SQL language (as well as pgAdmin) to manage objects and data stored in the database.
@@ -60,6 +65,8 @@
     2. Double-click the server name. If prompted, enter the database password you chose during installation (you can choose to save the password so you don’t need type it in the future). A brief message appears while pgAdmin is establishing a connection. When you’re connected, several new object items should display under the server name.
     3. Expand Databases and then expand the default database postgres.
     4. Under postgres, expand the Schemas object, and then expand public.
+
+    !(https://github.com/shivamjhads/sql/blob/main/sql-practical/Week-01/02.png)
 
   ***NOTE*** 
     If pgAdmin doesn’t show a default under Servers, you’ll need to add it. Right-click Servers, and click Create▶Server. In the dialog, type a name for your server in the General tab. On the Connection tab, in the Host name/address box, enter localhost. Fill in your username and the password you supplied when installing PostgreSQL and then click Save. You should now see your server listed.
