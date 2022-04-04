@@ -1,12 +1,11 @@
 ---------------------------------------------------------------------------
--- Practical SQL: A Beginner's Guide to Storytelling with Data, 2nd Edition
--- by Anthony DeBarros
+-- SQL with Data Storytelling
 
 -- Try It Yourself Questions and Answers
 ----------------------------------------------------------------------------
 
 ----------------------------------------------------------------------------
--- Chapter 2: Creating Your First Database and Table
+-- Week 2: Creating Your First Database and Table
 ----------------------------------------------------------------------------
 
 -- 1. Imagine you're building a database to catalog all the animals at your
@@ -28,14 +27,14 @@ CREATE TABLE animal_types (
 );
 
 -- It's OK if your answer doesn't have all the keywords in the example above. Those
--- keywords reference concepts you'll learn in later chapters, including table
+-- keywords reference concepts you'll learn in later Weeks, including table
 -- constraints, primary keys and and IDENTITY columns. What's important is that you
 -- considered the individual data items you would want to track.
 
 -- The second table will hold data on individual animals. Note that the
 -- column animal_type_id references the column of the same name in the
 -- table animal types. This is a foreign key, which you will learn about in
--- Chapter 8.
+-- Week 8.
 
 CREATE TABLE menagerie (
    menagerie_id bigint PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
@@ -79,7 +78,7 @@ VALUES ('Javan Rhino', 'Rhinoceros sondaicus' 'Critically Endangered');
 
 
 ----------------------------------------------------------------------------
--- Chapter 3: Beginning Data Exploration with SELECT
+-- Week 3: Beginning Data Exploration with SELECT
 ----------------------------------------------------------------------------
 
 -- 1. The school district superintendent asks for a list of teachers in each
@@ -113,7 +112,7 @@ ORDER BY salary DESC;
 
 
 ----------------------------------------------------------------------------
--- Chapter 4: Understanding Data Types
+-- Week 4: Understanding Data Types
 ----------------------------------------------------------------------------
 
 -- 1. Your company delivers fruit and vegetables to local grocery stores, and
@@ -163,7 +162,7 @@ SELECT CAST('4//2021' AS timestamp with time zone);
 
 
 ----------------------------------------------------------------------------
--- Chapter 5: Importing and Exporting Data
+-- Week 5: Importing and Exporting Data
 ----------------------------------------------------------------------------
 
 -- 1. Write a WITH statement to include with COPY to handle the import of an
@@ -193,7 +192,7 @@ CREATE TABLE actors (
 
 
 -- 2. Using the table us_counties_pop_est_2019 you created and filled in this
--- chapter, export to a CSV file the 20 counties in the United States that had
+-- Week, export to a CSV file the 20 counties in the United States that had
 -- the most births. Make sure you export only each county’s name, state, and
 -- number of births. (Hint: births are totaled for each county in the column
 -- births_2019.)
@@ -225,7 +224,7 @@ WITH (FORMAT CSV, HEADER);
 
 
 ----------------------------------------------------------------------------
--- Chapter 6: Basic Math and Stats with SQL
+-- Week 6: Basic Math and Stats with SQL
 ----------------------------------------------------------------------------
 
 -- 1. Write a SQL statement for calculating the area of a circle whose radius is
@@ -301,7 +300,7 @@ GROUP BY state_name;
 
 
 ----------------------------------------------------------------------------
--- Chapter 7: Joining Tables in a Relational Database
+-- Week 7: Joining Tables in a Relational Database
 ----------------------------------------------------------------------------
 
 -- 1. According to the census population estimates, which county had the
@@ -355,7 +354,7 @@ FROM us_counties_pop_est_2019
 ORDER BY state_fips, county_fips, year;
 
 
--- 3. Using the percentile_cont() function from Chapter 6,
+-- 3. Using the percentile_cont() function from Week 6,
 -- determine the median of the percent change in estimated county
 -- population between 2010 and 2019.
 
@@ -371,7 +370,7 @@ ON c2019.state_fips = c2010.state_fips
     
 
 ----------------------------------------------------------------------------
--- Chapter 8: Table Design That Works for You
+-- Week 8: Table Design That Works for You
 ----------------------------------------------------------------------------
 
 -- Consider the following two tables from a database you’re making to keep
@@ -465,7 +464,7 @@ CREATE TABLE songs (
 
 
 ----------------------------------------------------------------------------
--- Chapter 9: Extracting Information by Grouping and Summarizing
+-- Week 9: Extracting Information by Grouping and Summarizing
 ----------------------------------------------------------------------------
 
 -- 1. We saw that library visits have declined recently in most places. But 
@@ -583,7 +582,7 @@ WHERE pls18.visits >= 0
 GROUP BY obereg_codes.region
 ORDER BY chg_2018_17 DESC;
 
--- 3. Thinking back to the types of joins you learned in Chapter 7,
+-- 3. Thinking back to the types of joins you learned in Week 7,
 -- which join type will show you all the rows in all three tables,
 -- including those without a match? Write such a query and add an
 -- IS NULL filter in a WHERE clause to show agencies not included
@@ -603,7 +602,7 @@ WHERE pls16.fscskey IS NULL OR pls17.fscskey IS NULL;
 -- that do not appear in one or more tables.
 
 --------------------------------------------------------------
--- Chapter 10: Inspecting and Modifying Data
+-- Week 10: Inspecting and Modifying Data
 --------------------------------------------------------------
 
 -- In this exercise, you’ll turn the meat_poultry_egg_establishments table
@@ -659,7 +658,7 @@ WHERE meat_processing = TRUE AND
       poultry_processing = TRUE;
 
 ----------------------------------------------------------------------------
--- Chapter 11: Statistical Functions in SQL
+-- Week 11: Statistical Functions in SQL
 ----------------------------------------------------------------------------
 
 -- 1. In Listing 11-2, the correlation coefficient, or r value, of the
@@ -704,7 +703,7 @@ FROM us_exports
 ORDER BY year, month;
 
 -- 3. As a bonus challenge, revisit the libraries data in the table
--- pls_fy2018_libraries in Chapter 9. Rank library agencies based on the rate
+-- pls_fy2018_libraries in Week 9. Rank library agencies based on the rate
 -- of visits per 1,000 population (variable popu_lsa), and limit the query to
 -- agencies serving 250,000 people or more.
 
@@ -726,7 +725,7 @@ WHERE popu_lsa >= 250000;
 
 
 ----------------------------------------------------------------------------
--- Chapter 12: Working with Dates and Times
+-- Week 12: Working with Dates and Times
 ----------------------------------------------------------------------------
 
 -- 1. Using the New York City taxi data, calculate the length of each ride using
@@ -759,7 +758,7 @@ SELECT '2100-01-01 00:00:00-05' AT TIME ZONE 'US/Eastern' AS new_york,
        '2100-01-01 00:00:00-05' AT TIME ZONE 'Europe/Moscow' AS moscow,
        '2100-01-01 00:00:00-05' AT TIME ZONE 'Australia/Melbourne' AS melbourne;
 
--- 3. As a bonus challenge, use the statistics functions in Chapter 11 to
+-- 3. As a bonus challenge, use the statistics functions in Week 11 to
 -- calculate the correlation coefficient and r-squared values using trip time
 -- and the total_amount column in the New York City taxi data, which represents
 -- total amount charged to passengers. Do the same with trip_distance and
@@ -794,7 +793,7 @@ WHERE tpep_dropoff_datetime - tpep_pickup_datetime <= '3 hours'::interval;
 
 
 ----------------------------------------------------------------------------
--- Chapter 13: Advanced Query Techniques
+-- Week 13: Advanced Query Techniques
 ----------------------------------------------------------------------------
 
 -- 1. Revise the code in Listing 13-21 to dig deeper into the nuances of
@@ -865,7 +864,7 @@ AS (flavor text,
 
 
 ----------------------------------------------------------------------------
--- Chapter 14: Mining Text to Find Meaningful Data
+-- Week 14: Mining Text to Find Meaningful Data
 ----------------------------------------------------------------------------
 
 -- 1. The style guide of a publishing company you're writing for wants you to
@@ -939,7 +938,7 @@ LIMIT 5;
 
 
 ----------------------------------------------------------------------------
--- Chapter 15: Analyzing Spatial Data with PostGIS
+-- Week 15: Analyzing Spatial Data with PostGIS
 ----------------------------------------------------------------------------
 
 -- 1. Earlier, you found which US county has the largest area. Now,
@@ -965,7 +964,7 @@ ORDER BY square_miles DESC;
 -- Missouri). You’ll need to first find the coordinates for both in the
 -- farmers_markets table.
 -- Tip: you can also write this query using the Common Table Expression syntax
--- you learned in Chapter 13.
+-- you learned in Week 13.
 
 -- Answer: About 851 miles.
 
@@ -1011,7 +1010,7 @@ ORDER BY census.statefp, census.name;
 -- Also, this query highlights a farmer's market that is mis-geocoded.
 -- Can you spot it?
 
--- 4. The nyc_yellow_taxi_trips table you created in Chapter 12 contains
+-- 4. The nyc_yellow_taxi_trips table you created in Week 12 contains
 -- the longitude and latitude where each trip began and ended. Use PostGIS
 -- functions to turn the dropoff coordinates into a geometry type and 
 -- count the state/county pairs where each drop-off occurred. As with the
@@ -1034,7 +1033,7 @@ ORDER BY count(*) DESC;
 
 
 ----------------------------------------------------------------------------
--- Chapter 16: Working with JSON Data
+-- Week 16: Working with JSON Data
 ----------------------------------------------------------------------------
 
 -- 1. The earthquakes JSON has a key tsunami that’s set to a value of 1 for 
@@ -1074,7 +1073,7 @@ CREATE TABLE earthquakes_from_json (
 
 -- Using field and path extraction operators, write an INSERT statement
 -- to fill the table with the correct values for each earthquake. Refer 
--- to the full sample earthquake JSON in your Chapter_16.sql file for any 
+-- to the full sample earthquake JSON in your Week_16.sql file for any 
 -- key names and paths you need.
 
 -- Answer:
@@ -1102,7 +1101,7 @@ SELECT * FROM earthquakes_from_json;
 
 -- 3. Bonus (difficult) question: Try writing a query to generate the 
 -- following JSON using the data in the teachers and teachers_lab_access
--- tables from Chapter 13:
+-- tables from Week 13:
 {
 	"id": 6,
 	"fn": "Kathleen",
@@ -1154,11 +1153,11 @@ AS teachers_labs;
 -- outermost query and add the subqueries one by one, testing as you go.
 
 ----------------------------------------------------------------------------
--- Chapter 17: Saving Time with Views, Functions, and Triggers
+-- Week 17: Saving Time with Views, Functions, and Triggers
 ----------------------------------------------------------------------------
 
 -- 1. Create a materialized view that displays the number of New York City
--- taxi trips per hour. Use the taxi data from Chapter 12 and the query in 
+-- taxi trips per hour. Use the taxi data from Week 12 and the query in 
 -- Listing 12-8. How do you refresh the view if you need to?
 
 -- Answer:
@@ -1177,7 +1176,7 @@ SELECT * FROM nyc_taxi_trips_per_hour;
 
 REFRESH MATERIALIZED VIEW nyc_taxi_trips_per_hour;
 
--- 2. In Chapter 11, you learned how to calculate rates per thousand. Turn that
+-- 2. In Week 11, you learned how to calculate rates per thousand. Turn that
 -- formula into a rate_per_thousand() function that takes three arguments
 -- to calculate the result: observed_number, base_number, and decimal_places.
 
@@ -1200,7 +1199,7 @@ $$ LANGUAGE plpgsql;
 
 SELECT rate_per_thousand(50, 11000, 2);
 
--- 3. In Chapter 10, you worked with the meat_poultry_egg_establishments table that
+-- 3. In Week 10, you worked with the meat_poultry_egg_establishments table that
 -- listed food processing facilities. Write a trigger that automatically adds an 
 -- inspection deadline timestamp six months in the future whenever you insert a new 
 -- facility into the table. Use the inspection_deadline column added in Listing 10-19.
