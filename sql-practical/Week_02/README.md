@@ -1,6 +1,9 @@
 ### Week 2: Create My First Database and Table
 
-*SQL is more than just a means for extracting knowledge from data. It’s also a language for defining the structures that hold data so we can organize relationships in the data*
+***SQL is more than just a means for extracting knowledge from data. It’s also a language for defining the structures that hold data so we can organize relationships in the data***
+
+> A table is a grid of rows and columns that store data. Each row holds a collection of columns, and each column contains data of a specified type: most commonly, numbers, characters, and dates. We use SQL to define the structure of a table and how each table might relate to other tables in the database. We also use SQL to extract, or query, data from tables.
+
 Introduces PostgreSQL, the pgAdmin user interface, and the code for loading a simple data set about teachers into a new database.
 
 CREATING YOUR FIRST DATABASE AND TABLE
