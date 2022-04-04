@@ -8,7 +8,7 @@ CREATE DATABASE AND TABLE
 
 We will create our first database, add a table, and then insert several rows of data into the table using SQL in the pgAdmin interface. Then, you’ll use pgAdmin to view the results. Let’s start with a look at tables.
 
-##Understanding Tables
+## Understanding Tables
 
 Knowing your tables is fundamental to understanding the data in your database. Whenever I start working with a fresh database, the first thing I do is look at the tables within. I look for clues in the table names and their column structure. Do the tables contain text, numbers, or both? How many rows are in each table?
 
