@@ -1,5 +1,6 @@
 ### Week 2: Create My First Database and Table
 
+*SQL is more than just a means for extracting knowledge from data. It’s also a language for defining the structures that hold data so we can organize relationships in the data*
 Introduces PostgreSQL, the pgAdmin user interface, and the code for loading a simple data set about teachers into a new database.
 
 CREATING YOUR FIRST DATABASE AND TABLE
