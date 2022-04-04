@@ -18,6 +18,13 @@ We use [PostgreSQL](https://www.postgresql.org), which is free and open source. 
 
 ## What's Covered in Each Week?
 
+•Create databases and related tables using your own data
+•Aggregate, sort, and filter data to find patterns
+•Use functions for basic math and advanced statistical operations
+•Identify errors in data and clean them up
+•Analyze spatial data with a geographic information system (PostGIS)
+•Create advanced queries and automate tasks
+
 * Week 1: Setting Up Your Coding Environment
 * Week 2: Creating Your First Database and Table
 * Week 3: Beginning Data Exploration with SELECT
