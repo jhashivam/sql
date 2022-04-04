@@ -14,15 +14,16 @@ Knowing tables is fundamental to understanding the data in your database. Whenev
 
 Next, I look at how many tables are in the database. The simplest database might have a single table. A full-bore application that handles customer data or tracks air travel might have dozens or hundreds. The number of tables tells me not only how much data I will need to analyze, but also hints that I should explore relationships among the data in each table.
 
-> let’s look at an example of what the contents of tables might look like. We will use a hypothetical database for managing a school’s class enrollment; within that database are several tables that track students and their classes. The first table, called student_enrollment, shows the students that are signed up for each class section:
+> let’s look at an example of what the contents of tables might look like. We will use a hypothetical database for managing a school’s class enrollment; within that database are several tables that track students and their classes. The first table, called `student_enrollment`, shows the students that are signed up for each class section:
 
-student_id    class_id      class_section    semester
-----------    ----------    -------------    ---------
-CHRISPA004    COMPSCI101    3                Fall 2023
-DAVISHE010    COMPSCI101    3                Fall 2023
-ABRILDA002    ENG101        40               Fall 2023
-DAVISHE010    ENG101        40               Fall 2023
-RILEYPH002    ENG101        40               Fall 2023
+| student_id |   | class_id   |    | class_section |   | semester |
+| ---------- |   | ---------- |    | ------------- |   | ---------|
+| CHRISPA004 |   | COMPSCI101 |    | 3             |   | Fall 2023 |
+| DAVISHE010 |   | COMPSCI101 |    | 3             |   | Fall 2023 |
+| ABRILDA002 |   | ENG101     |    | 40            |   | Fall 2023 |
+| DAVISHE010 |   | ENG101     |    | 40            |   | Fall 2023 |
+| RILEYPH002 |   | ENG101     |    | 40            |   | Fall 2023 |
+
 This table shows that two students have signed up for COMPSCI101, and three have signed up for ENG101. But where are the details about each student and class? In this example, these details are stored in separate tables called students and classes, and those tables relate to this one. This is where the power of a relational database begins to show itself.
 
 The first several rows of the students table include the following:
