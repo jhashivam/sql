@@ -53,7 +53,7 @@
     - macOS: Click the pgAdmin icon in your Applications folder, making sure you’ve also launched Postgres.app.
     - On macOS, when you launch pgAdmin the first time, a dialog might appear that displays “pgAdmin4.app can’t be opened because it is from an      unidentified developer.” Right-click the icon and click Open. The next dialog should give you the option to open the app; going forward, your Mac will remember you’ve granted this permission.
 
-    !(https://github.com/shivamjhads/sql/blob/main/sql-practical/Week-01/01.png)
+    ![This is an image](https://github.com/shivamjhads/sql/blob/main/sql-practical/Week-01/01.png)
 
 - **Connecting to the Default postgres Database**:
 
@@ -66,7 +66,7 @@
     3. Expand Databases and then expand the default database postgres.
     4. Under postgres, expand the Schemas object, and then expand public.
 
-    !(https://github.com/shivamjhads/sql/blob/main/sql-practical/Week-01/02.png)
+    ![This is an image](https://github.com/shivamjhads/sql/blob/main/sql-practical/Week-01/02.png)
 
   ***NOTE*** 
     If pgAdmin doesn’t show a default under Servers, you’ll need to add it. Right-click Servers, and click Create▶Server. In the dialog, type a name for your server in the General tab. On the Connection tab, in the Host name/address box, enter localhost. Fill in your username and the password you supplied when installing PostgreSQL and then click Save. You should now see your server listed.
