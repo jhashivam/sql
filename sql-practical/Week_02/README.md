@@ -24,9 +24,10 @@ Next, I look at how many tables are in the database. The simplest database might
 | DAVISHE010 | ENG101     |  40           | Fall 2023 |
 | RILEYPH002 | ENG101     |  40           | Fall 2023 |
 
-This table shows that two students have signed up for COMPSCI101, and three have signed up for ENG101. But where are the details about each student and class? In this example, these details are stored in separate tables called students and classes, and those tables relate to this one. This is where the power of a relational database begins to show itself.
 
-The first several rows of the students table include the following:
+> This table shows that two students have signed up for `COMPSCI101`, and three have signed up for `ENG101`. But where are the details about each student and class? In this example, these details are stored in separate tables called `students` and `classes`, and those tables relate to this one. This is where the power of a relational database begins to show itself.
+
+The first several rows of the `students` table include the following:
 
 | student_id | first_name | last_name | dob |
 | ---------- | ---------- | --------- | ---------- |
@@ -36,21 +37,21 @@ The first several rows of the students table include the following:
 |RILEYPH002 | Riley | Phelps | 2005-06-15 |
 
 
-The students table contains details on each student, using the value in the student_id column to identify each one. That value acts as a unique key that connects both tables, giving you the ability to create rows such as the following with the class_id column from student_enrollment and the first_name and last_name columns from students:
+The `students` table contains details on each student, using the value in the `student_id` column to identify each one. That value acts as a unique key that connects both tables, giving you the ability to create rows such as the following with the `class_id` column from `student_enrollment` and the `first_name` and `last_name` columns from `students`:
 
-class_id      first_name    last_name
-----------    ----------    ---------
-COMPSCI101    Davis         Hernandez
-COMPSCI101    Chris         Park
-ENG101        Abril         Davis
-ENG101        Davis         Hernandez
-ENG101        Riley         Phelps
-The classes table would work the same way, with a class_id column and several columns of detail about the class. Database builders prefer to organize data using separate tables for each main entity the database manages in order to reduce redundant data. In the example, we store each student’s name and date of birth just once. Even if the student signs up for multiple classes—as Davis Hernandez did—we don’t waste database space entering his name next to each class in the student_enrollment table. We just include his student ID.
+| class_id | first_name | last_name |
+| ---------- | ---------- | --------- |
+| COMPSCI101 | Davis | Hernandez |
+| COMPSCI101 | Chris | Park |
+| ENG101 | Abril | Davis |
+| ENG101 | Davis | Hernandez |
+| ENG101 | Riley | Phelps |
 
-Given that tables are a core building block of every database, in this chapter you’ll start your SQL coding adventure by creating a table inside a new database. Then you’ll load data into the table and view the completed table.
+> The `classes` table would work the same way, with a `class_id` column and several columns of detail about the class. Database builders prefer to organize data using separate tables for each main entity the database manages in order to reduce redundant data. In the example, we store each student’s name and date of birth just once. Even if the student signs up for multiple classes—as Davis Hernandez did—we don’t waste database space entering his name next to each class in the student_enrollment table. We just include his student ID.
 
-Creating a Database
-The PostgreSQL program you installed in Chapter 1 is a database management system, a software package that allows you to define, manage, and query data stored in databases. A database is a collection of objects that includes tables, functions, and much more. When you installed PostgreSQL, it created a database server—an instance of the application running on your computer—that includes a default database called postgres.
+### Creating a Database
+
+#### The PostgreSQL program is a database management system, a software package that allows you to define, manage, and query data stored in databases. A database is a collection of objects that includes tables, functions, and much more. When you installed PostgreSQL, it created a database server—an instance of the application running on your computer—that includes a default database called postgres.
 
 According to the PostgreSQL documentation, the default postgres database is “meant for use by users, utilities and third-party applications” (see https://www.postgresql.org/docs/current/app-initdb.html). We’ll create a new database to use for the examples in the book rather than use the default, so we can keep objects related to a particular topic or application organized together. This is good practice: it helps avoid a pileup of tables in a single database that have no relation to each other, and it ensures that if your data will be used to power an application, such as a mobile app, then the app database will contain only relevant information.
 
