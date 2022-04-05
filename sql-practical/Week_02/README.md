@@ -58,9 +58,9 @@ According to the PostgreSQL documentation, the default postgres database is “m
 To create a database, you need just one line of SQL, `CREATE DATABASE analysis;`  we’ll run using pgAdmin. You can find this code in [GitHub SQL Repository](https://github.com/shivamjhads/sql/blob/main/sql-practical/Week_02/Week_02.sql).
 
 ```
-*CREATE DATABASE analysis;*
+CREATE DATABASE analysis;
 ```
-![Creating a database named analysis](https://github.com/shivamjhads/sql/blob/main/sql-practical/Week-02/05.png)
+![Creating a database named analysis](https://github.com/shivamjhads/sql/blob/main/sql-practical/Week_02/05.png)
 
 This statement creates a database named analysis on your server using default PostgreSQL settings. Note that the code consists of two keywords—CREATE and DATABASE—followed by the name of the new database. You end the statement with a semicolon, which signals the end of the command. You must end all PostgreSQL statements with a semicolon, as part of the ANSI SQL standard. In some circumstances your queries will work even if you omit the semicolon, but not always, so using the semicolon is a good habit to form.
 
