@@ -64,19 +64,9 @@ CREATE DATABASE analysis;
 
 This statement creates a database named analysis on your server using default PostgreSQL settings. Note that the code consists of two keywords—CREATE and DATABASE—followed by the name of the new database. You end the statement with a semicolon, which signals the end of the command. You must end all PostgreSQL statements with a semicolon, as part of the ANSI SQL standard. In some circumstances your queries will work even if you omit the semicolon, but not always, so using the semicolon is a good habit to form.
 
-Executing SQL in pgAdmin
-In Chapter 1, you installed the graphical administrative tool pgAdmin (if you didn’t, go ahead and do that now). For much of our work, you’ll use pgAdmin to run the SQL statements you write, known as executing the code. Later in the book in Chapter 18, I’ll show you how to run SQL statements in a terminal window using the PostgreSQL command line program psql, but getting started is a bit easier with a graphical interface.
+We’ll use pgAdmin to run the SQL statement - 
 
-We’ll use pgAdmin to run the SQL statement in Listing 2-1 that creates the database. Then, we’ll connect to the new database and create a table. Follow these steps:
-
-Run PostgreSQL. If you’re using Windows, the installer sets PostgreSQL to launch every time you boot up. On macOS, you must double-click Postgres.app in your Applications folder (if you have an elephant icon in your menu bar, it’s already running).
-Launch pgAdmin. You’ll be prompted to enter the master password for pgAdmin you set the first time you launched the application.
-As you did in Chapter 1, in the left vertical pane (the object browser) click the arrow to the left of the Servers node to show the default server. Depending on how you installed PostgreSQL, the default server may be named localhost or PostgreSQL x, where x is the version of the application. You may receive another password prompt. This prompt is for PostgreSQL, not pgAdmin, so enter the password you set for PostgreSQL during installation. You should see a brief message that pgAdmin is establishing a connection.
-In pgAdmin’s object browser, expand Databases and click postgres once to highlight it, as shown in Figure 2-1.
-
-Figure 2-1: The default postgres database
-
-Open the Query Tool by choosing Tools▶Query Tool.
+- Open the Query Tool by choosing Tools▶Query Tool.
 In the Query Editor pane (the top horizontal pane), enter the code from Listing 2-1.
 Click the Execute/Refresh icon (shaped like a right arrow) to execute the statement. PostgreSQL creates the database, and in the Output pane in the Query Tool under Messages you’ll see a notice indicating the query returned successfully, as shown in Figure 2-2.
 
