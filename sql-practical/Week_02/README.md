@@ -51,14 +51,17 @@ The `students` table contains details on each student, using the value in the `s
 
 ### Creating a Database
 
-#### The PostgreSQL program is a database management system, a software package that allows you to define, manage, and query data stored in databases. A database is a collection of objects that includes tables, functions, and much more. When you installed PostgreSQL, it created a database server—an instance of the application running on your computer—that includes a default database called postgres.
+ The PostgreSQL program is a database management system, a software package that allows you to define, manage, and query data stored in databases. A database is a collection of objects that includes tables, functions, and much more. When we installed PostgreSQL, it created a database server—an instance of the application running on our computer—that includes a default database called postgres.
 
-According to the PostgreSQL documentation, the default postgres database is “meant for use by users, utilities and third-party applications” (see https://www.postgresql.org/docs/current/app-initdb.html). We’ll create a new database to use for the examples in the book rather than use the default, so we can keep objects related to a particular topic or application organized together. This is good practice: it helps avoid a pileup of tables in a single database that have no relation to each other, and it ensures that if your data will be used to power an application, such as a mobile app, then the app database will contain only relevant information.
+According to the PostgreSQL documentation, the default postgres database is “meant for use by users, utilities and third-party applications” (see https://www.postgresql.org/docs/current/app-initdb.html). We’ll create a new database to use for the excercises.
 
-To create a database, you need just one line of SQL, shown in Listing 2-1, which we’ll run in a moment using pgAdmin. You can find this code, along with all the examples in this book, in the files you downloaded from GitHub via the link at https://www.nostarch.com/practical-sql-2nd-edition/.
+To create a database, you need just one line of SQL, `CREATE DATABASE analysis;`  we’ll run using pgAdmin. You can find this code in [GitHub SQL Repository](https://github.com/shivamjhads/sql/blob/main/sql-practical/Week_02/Week_02.sql).
 
+```
 CREATE DATABASE analysis;
-Listing 2-1: Creating a database named analysis
+
+```
+Creating a database named analysis
 
 This statement creates a database named analysis on your server using default PostgreSQL settings. Note that the code consists of two keywords—CREATE and DATABASE—followed by the name of the new database. You end the statement with a semicolon, which signals the end of the command. You must end all PostgreSQL statements with a semicolon, as part of the ANSI SQL standard. In some circumstances your queries will work even if you omit the semicolon, but not always, so using the semicolon is a good habit to form.
 
