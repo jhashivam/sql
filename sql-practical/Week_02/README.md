@@ -55,12 +55,12 @@ The `students` table contains details on each student, using the value in the `s
 
 According to the PostgreSQL documentation, the default postgres database is “meant for use by users, utilities and third-party applications” (see https://www.postgresql.org/docs/current/app-initdb.html). We’ll create a new database to use for the excercises.
 
-To create a database, you need just one line of SQL, `CREATE DATABASE analysis;`  we’ll run using pgAdmin. You can find this code in [GitHub SQL Repository](https://github.com/shivamjhads/sql/blob/main/sql-practical/Week_02/Week_02.sql).
+To create a database, you need just one line of SQL, `CREATE DATABASE analysis;`  we’ll run using pgAdmin. You can find this code in [GitHub SQL Repository](https://github.com/jhashivam/sql/blob/main/sql-practical/Week_02/Week_02.sql).
 
 ```
 CREATE DATABASE analysis;
 ```
-![Creating a database named analysis](https://github.com/shivamjhads/sql/blob/main/sql-practical/Week_02/05.png)
+![Creating a database named analysis](https://github.com/jhashivam/sql/blob/main/sql-practical/Week_02/05.png)
 
 This statement creates a database named analysis on your server using default PostgreSQL settings. Note that the code consists of two keywords—CREATE and DATABASE—followed by the name of the new database. You end the statement with a semicolon, which signals the end of the command. You must end all PostgreSQL statements with a semicolon, as part of the ANSI SQL standard. In some circumstances your queries will work even if you omit the semicolon, but not always, so using the semicolon is a good habit to form.
 
@@ -99,7 +99,7 @@ Creating a table named teachers with six columns
 
 > The teacher’s hire_date 4 is set to the data type `date`, and the salary column 5 is numeric.
 
-![Creating a Table named teacher](https://github.com/shivamjhads/sql/blob/main/sql-practical/Week_02/06.png)
+![Creating a Table named teacher](https://github.com/jhashivam/sql/blob/main/sql-practical/Week_02/06.png)
 
 
 ### Insert Rows into a Table
@@ -115,4 +115,4 @@ VALUES ('Janet', 'Smith', 'F.D. Roosevelt HS', '2011-10-30', 36200),
 ```
 
 
-![View the data](https://github.com/shivamjhads/sql/blob/main/sql-practical/Week_02/07.png)
+![View the data](https://github.com/jhashivam/sql/blob/main/sql-practical/Week_02/07.png)
